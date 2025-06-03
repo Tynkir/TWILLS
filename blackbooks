@@ -1,0 +1,19 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<tg4w version="1.0.0">
+    <datasets>
+    </datasets>
+    <actions>
+        <action type="goto" refresh="." window="." step="0">
+            <xpath><![CDATA[window.location.href]]></xpath>
+            <value><![CDATA[http://www.blackbookws.com/UsedCarWS.asmx]]></value>
+        </action>
+        <action type="verify-title" window="." step="1">
+            <xpath><![CDATA[*]]></xpath>
+            <value><![CDATA[UsedCarWS Web Service]]></value>
+        </action>
+        <action type="assert-text-exists" window="." step="2">
+            <xpath><![CDATA[DIV[@ID="content"]/P[1]]]></xpath>
+            <value><![CDATA[UsedCarWS]]></value>
+        </action>
+    </actions>
+</tg4w>
